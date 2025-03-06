@@ -31,18 +31,20 @@
             this.btnsalvar = new System.Windows.Forms.Button();
             this.txtCadastroCurso = new System.Windows.Forms.Label();
             this.txtIdCurso = new System.Windows.Forms.Label();
-            this.txtNomeCurso = new System.Windows.Forms.Label();
-            this.txtDescricaoCurso = new System.Windows.Forms.Label();
-            this.txtDataInicioCurso = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtStatusCurso = new System.Windows.Forms.Label();
+            this.t1 = new System.Windows.Forms.Label();
+            this.t2 = new System.Windows.Forms.Label();
+            this.t3 = new System.Windows.Forms.Label();
+            this.t4 = new System.Windows.Forms.Label();
+            this.t9 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtNomeCurso = new System.Windows.Forms.TextBox();
+            this.txtDescricaoCurso = new System.Windows.Forms.TextBox();
+            this.txtDataInicioCurso = new System.Windows.Forms.TextBox();
+            this.txtDataFimCurso = new System.Windows.Forms.TextBox();
+            this.txtcargaHorariaCurso = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.t5 = new System.Windows.Forms.Label();
+            this.txtStatusCurso = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +57,7 @@
             this.btnsalvar.TabIndex = 0;
             this.btnsalvar.Text = "Salvar";
             this.btnsalvar.UseVisualStyleBackColor = true;
+            this.btnsalvar.Click += new System.EventHandler(this.btnsalvar_Click);
             // 
             // txtCadastroCurso
             // 
@@ -80,65 +83,65 @@
             this.txtIdCurso.TabIndex = 2;
             this.txtIdCurso.Text = "idCurso";
             // 
-            // txtNomeCurso
+            // t1
             // 
-            this.txtNomeCurso.AutoSize = true;
-            this.txtNomeCurso.BackColor = System.Drawing.Color.Transparent;
-            this.txtNomeCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeCurso.ForeColor = System.Drawing.Color.White;
-            this.txtNomeCurso.Location = new System.Drawing.Point(145, 157);
-            this.txtNomeCurso.Name = "txtNomeCurso";
-            this.txtNomeCurso.Size = new System.Drawing.Size(137, 20);
-            this.txtNomeCurso.TabIndex = 3;
-            this.txtNomeCurso.Text = "Nome do Curso ";
+            this.t1.AutoSize = true;
+            this.t1.BackColor = System.Drawing.Color.Transparent;
+            this.t1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t1.ForeColor = System.Drawing.Color.White;
+            this.t1.Location = new System.Drawing.Point(145, 157);
+            this.t1.Name = "t1";
+            this.t1.Size = new System.Drawing.Size(137, 20);
+            this.t1.TabIndex = 3;
+            this.t1.Text = "Nome do Curso ";
             // 
-            // txtDescricaoCurso
+            // t2
             // 
-            this.txtDescricaoCurso.AutoSize = true;
-            this.txtDescricaoCurso.BackColor = System.Drawing.Color.Transparent;
-            this.txtDescricaoCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescricaoCurso.ForeColor = System.Drawing.Color.White;
-            this.txtDescricaoCurso.Location = new System.Drawing.Point(118, 204);
-            this.txtDescricaoCurso.Name = "txtDescricaoCurso";
-            this.txtDescricaoCurso.Size = new System.Drawing.Size(166, 20);
-            this.txtDescricaoCurso.TabIndex = 4;
-            this.txtDescricaoCurso.Text = "Descrição do Curso";
+            this.t2.AutoSize = true;
+            this.t2.BackColor = System.Drawing.Color.Transparent;
+            this.t2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t2.ForeColor = System.Drawing.Color.White;
+            this.t2.Location = new System.Drawing.Point(118, 204);
+            this.t2.Name = "t2";
+            this.t2.Size = new System.Drawing.Size(166, 20);
+            this.t2.TabIndex = 4;
+            this.t2.Text = "Descrição do Curso";
             // 
-            // txtDataInicioCurso
+            // t3
             // 
-            this.txtDataInicioCurso.AutoSize = true;
-            this.txtDataInicioCurso.BackColor = System.Drawing.Color.Transparent;
-            this.txtDataInicioCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataInicioCurso.ForeColor = System.Drawing.Color.White;
-            this.txtDataInicioCurso.Location = new System.Drawing.Point(118, 250);
-            this.txtDataInicioCurso.Name = "txtDataInicioCurso";
-            this.txtDataInicioCurso.Size = new System.Drawing.Size(173, 20);
-            this.txtDataInicioCurso.TabIndex = 5;
-            this.txtDataInicioCurso.Text = "Data Início do Curso";
+            this.t3.AutoSize = true;
+            this.t3.BackColor = System.Drawing.Color.Transparent;
+            this.t3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t3.ForeColor = System.Drawing.Color.White;
+            this.t3.Location = new System.Drawing.Point(118, 250);
+            this.t3.Name = "t3";
+            this.t3.Size = new System.Drawing.Size(173, 20);
+            this.t3.TabIndex = 5;
+            this.t3.Text = "Data Início do Curso";
             // 
-            // label5
+            // t4
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(125, 296);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(159, 20);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Data Fim do Curso";
+            this.t4.AutoSize = true;
+            this.t4.BackColor = System.Drawing.Color.Transparent;
+            this.t4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t4.ForeColor = System.Drawing.Color.White;
+            this.t4.Location = new System.Drawing.Point(125, 296);
+            this.t4.Name = "t4";
+            this.t4.Size = new System.Drawing.Size(159, 20);
+            this.t4.TabIndex = 6;
+            this.t4.Text = "Data Fim do Curso";
             // 
-            // txtStatusCurso
+            // t9
             // 
-            this.txtStatusCurso.AutoSize = true;
-            this.txtStatusCurso.BackColor = System.Drawing.Color.Transparent;
-            this.txtStatusCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStatusCurso.ForeColor = System.Drawing.Color.White;
-            this.txtStatusCurso.Location = new System.Drawing.Point(145, 338);
-            this.txtStatusCurso.Name = "txtStatusCurso";
-            this.txtStatusCurso.Size = new System.Drawing.Size(139, 20);
-            this.txtStatusCurso.TabIndex = 7;
-            this.txtStatusCurso.Text = "Status do Curso";
+            this.t9.AutoSize = true;
+            this.t9.BackColor = System.Drawing.Color.Transparent;
+            this.t9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t9.ForeColor = System.Drawing.Color.White;
+            this.t9.Location = new System.Drawing.Point(145, 372);
+            this.t9.Name = "t9";
+            this.t9.Size = new System.Drawing.Size(139, 20);
+            this.t9.TabIndex = 7;
+            this.t9.Text = "Status do Curso";
             // 
             // textBox1
             // 
@@ -148,45 +151,45 @@
             this.textBox1.Size = new System.Drawing.Size(191, 28);
             this.textBox1.TabIndex = 8;
             // 
-            // textBox2
+            // txtNomeCurso
             // 
-            this.textBox2.Location = new System.Drawing.Point(290, 147);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 30);
-            this.textBox2.TabIndex = 9;
+            this.txtNomeCurso.Location = new System.Drawing.Point(290, 147);
+            this.txtNomeCurso.Multiline = true;
+            this.txtNomeCurso.Name = "txtNomeCurso";
+            this.txtNomeCurso.Size = new System.Drawing.Size(191, 30);
+            this.txtNomeCurso.TabIndex = 9;
             // 
-            // textBox3
+            // txtDescricaoCurso
             // 
-            this.textBox3.Location = new System.Drawing.Point(297, 204);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(272, 29);
-            this.textBox3.TabIndex = 10;
+            this.txtDescricaoCurso.Location = new System.Drawing.Point(297, 204);
+            this.txtDescricaoCurso.Multiline = true;
+            this.txtDescricaoCurso.Name = "txtDescricaoCurso";
+            this.txtDescricaoCurso.Size = new System.Drawing.Size(272, 29);
+            this.txtDescricaoCurso.TabIndex = 10;
             // 
-            // textBox4
+            // txtDataInicioCurso
             // 
-            this.textBox4.Location = new System.Drawing.Point(297, 252);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(95, 27);
-            this.textBox4.TabIndex = 11;
+            this.txtDataInicioCurso.Location = new System.Drawing.Point(297, 252);
+            this.txtDataInicioCurso.Multiline = true;
+            this.txtDataInicioCurso.Name = "txtDataInicioCurso";
+            this.txtDataInicioCurso.Size = new System.Drawing.Size(95, 27);
+            this.txtDataInicioCurso.TabIndex = 11;
             // 
-            // textBox5
+            // txtDataFimCurso
             // 
-            this.textBox5.Location = new System.Drawing.Point(308, 296);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(95, 23);
-            this.textBox5.TabIndex = 12;
+            this.txtDataFimCurso.Location = new System.Drawing.Point(297, 298);
+            this.txtDataFimCurso.Multiline = true;
+            this.txtDataFimCurso.Name = "txtDataFimCurso";
+            this.txtDataFimCurso.Size = new System.Drawing.Size(95, 23);
+            this.txtDataFimCurso.TabIndex = 12;
             // 
-            // textBox6
+            // txtcargaHorariaCurso
             // 
-            this.textBox6.Location = new System.Drawing.Point(297, 340);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(126, 20);
-            this.textBox6.TabIndex = 13;
+            this.txtcargaHorariaCurso.Location = new System.Drawing.Point(297, 334);
+            this.txtcargaHorariaCurso.Multiline = true;
+            this.txtcargaHorariaCurso.Name = "txtcargaHorariaCurso";
+            this.txtcargaHorariaCurso.Size = new System.Drawing.Size(126, 20);
+            this.txtcargaHorariaCurso.TabIndex = 13;
             // 
             // pictureBox1
             // 
@@ -198,6 +201,27 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // t5
+            // 
+            this.t5.AutoSize = true;
+            this.t5.BackColor = System.Drawing.Color.Transparent;
+            this.t5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t5.ForeColor = System.Drawing.Color.White;
+            this.t5.Location = new System.Drawing.Point(86, 332);
+            this.t5.Name = "t5";
+            this.t5.Size = new System.Drawing.Size(198, 20);
+            this.t5.TabIndex = 15;
+            this.t5.Text = "Carga Horaria do Curso";
+            this.t5.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // txtStatusCurso
+            // 
+            this.txtStatusCurso.Location = new System.Drawing.Point(297, 374);
+            this.txtStatusCurso.Multiline = true;
+            this.txtStatusCurso.Name = "txtStatusCurso";
+            this.txtStatusCurso.Size = new System.Drawing.Size(126, 20);
+            this.txtStatusCurso.TabIndex = 16;
+            // 
             // frmCadastroCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,18 +229,20 @@
             this.BackgroundImage = global::consultaAluno.Properties.Resources.inovacao_e_tecnologia;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtStatusCurso);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.t5);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txtcargaHorariaCurso);
+            this.Controls.Add(this.txtDataFimCurso);
             this.Controls.Add(this.txtDataInicioCurso);
             this.Controls.Add(this.txtDescricaoCurso);
             this.Controls.Add(this.txtNomeCurso);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.t9);
+            this.Controls.Add(this.t4);
+            this.Controls.Add(this.t3);
+            this.Controls.Add(this.t2);
+            this.Controls.Add(this.t1);
             this.Controls.Add(this.txtIdCurso);
             this.Controls.Add(this.txtCadastroCurso);
             this.Controls.Add(this.btnsalvar);
@@ -233,17 +259,19 @@
         private System.Windows.Forms.Button btnsalvar;
         private System.Windows.Forms.Label txtCadastroCurso;
         private System.Windows.Forms.Label txtIdCurso;
-        private System.Windows.Forms.Label txtNomeCurso;
-        private System.Windows.Forms.Label txtDescricaoCurso;
-        private System.Windows.Forms.Label txtDataInicioCurso;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label txtStatusCurso;
+        private System.Windows.Forms.Label t1;
+        private System.Windows.Forms.Label t2;
+        private System.Windows.Forms.Label t3;
+        private System.Windows.Forms.Label t4;
+        private System.Windows.Forms.Label t9;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtNomeCurso;
+        private System.Windows.Forms.TextBox txtDescricaoCurso;
+        private System.Windows.Forms.TextBox txtDataInicioCurso;
+        private System.Windows.Forms.TextBox txtDataFimCurso;
+        private System.Windows.Forms.TextBox txtcargaHorariaCurso;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label t5;
+        private System.Windows.Forms.TextBox txtStatusCurso;
     }
 }

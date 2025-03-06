@@ -47,5 +47,60 @@ namespace consultaAluno
                 MessageBox.Show("Falha ao tentar conectar\n\n" + ex.Message);
             }
         }
+
+        private void btnAdicionar_Click(object sender, EventArgs e)
+        {
+            frmCadastroAluno frm = new frmCadastroAluno();
+            frm.ShowDialog(); // ShowDialog - Chama a janela Cadastro de aluno
+        }
+
+        private void btnAddCurso_Click(object sender, EventArgs e)
+        {
+            frmCadastroCurso frm = new frmCadastroCurso();
+            frm.ShowDialog();   // ShowDialog - Chama a janela de Cadastro de curso  
+        }
+
+        private void btnBuscarAluno_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
+                { cn.Open();
+                    //var sqlQuery = "select * from aluno where nomeAluno = '" + txtBuscarAluno.Text + "'";
+                    var sqlQuery = "select * from aluno where nomeAluno  like '%"  + txtBuscarAluno.Text + "%'";
+                    using (SqlDataAdapter da = new SqlDataAdapter(sqlQuery, cn))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            da.Fill(dt);
+                            dataGridView1.DataSource = dt;
+                        }
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Falha ao tentar conectar \n\n" + ex.Message); 
+             } 
+        }
+
+        private void btnMatricularAluno_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAtualizarAluno_Click(object sender, EventArgs e)
+        { 
+            //Var - Palavra chave do C#  especifica  que o tipo de variável é determinado automaticamente com base no valor atribuido à ela 
+            //DataGridView1.CurrentCell.RowIndex - pega o índice da linha atualmente selecionada no DataGridView.
+            // dataGridView1.Rows[...].Cells[0].Value - acessa o valor da primeira célula (coluna índice 0) dessa linha. 
+            // A linha inteira serve para obter o id do aluno selecionado 
+            var idAluno = Convert.ToInt32(dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value);
+
+            //cria uma nova instância do formulário frmCadastroAluno, passando idAluno como parâmetro para o construtor.
+            frmCadastroAluno frm = new frmCadastroAluno(idAluno);
+            frm.ShowDialog();
+        }
     }
 }
