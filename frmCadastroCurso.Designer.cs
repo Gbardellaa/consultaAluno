@@ -65,7 +65,7 @@
             this.txtCadastroCurso.BackColor = System.Drawing.Color.Transparent;
             this.txtCadastroCurso.Font = new System.Drawing.Font("Lucida Sans", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCadastroCurso.ForeColor = System.Drawing.Color.White;
-            this.txtCadastroCurso.Location = new System.Drawing.Point(206, 33);
+            this.txtCadastroCurso.Location = new System.Drawing.Point(210, 42);
             this.txtCadastroCurso.Name = "txtCadastroCurso";
             this.txtCadastroCurso.Size = new System.Drawing.Size(374, 42);
             this.txtCadastroCurso.TabIndex = 1;

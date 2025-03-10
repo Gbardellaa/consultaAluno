@@ -50,7 +50,7 @@ namespace consultaAluno
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            frmCadastroAluno frm = new frmCadastroAluno();
+            frmCadastroAluno frm = new frmCadastroAluno(0);
             frm.ShowDialog(); // ShowDialog - Chama a janela Cadastro de aluno
         }
 
@@ -87,7 +87,8 @@ namespace consultaAluno
 
         private void btnMatricularAluno_Click(object sender, EventArgs e)
         {
-
+            frmMatricula frm = new frmMatricula();
+            frm.ShowDialog();
         }
 
         private void btnAtualizarAluno_Click(object sender, EventArgs e)
@@ -101,6 +102,12 @@ namespace consultaAluno
             //cria uma nova instância do formulário frmCadastroAluno, passando idAluno como parâmetro para o construtor.
             frmCadastroAluno frm = new frmCadastroAluno(idAluno);
             frm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmCadUnidEscolar frm = new frmCadUnidEscolar();
+                frm.ShowDialog();
         }
     }
 }

@@ -37,6 +37,7 @@
             this.btnBuscarAluno = new System.Windows.Forms.Button();
             this.btnAtualizarAluno = new System.Windows.Forms.Button();
             this.btnMatricularAluno = new System.Windows.Forms.Button();
+            this.btnCadUnidEscolar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,11 +128,22 @@
             this.btnMatricularAluno.UseVisualStyleBackColor = true;
             this.btnMatricularAluno.Click += new System.EventHandler(this.btnMatricularAluno_Click);
             // 
+            // btnCadUnidEscolar
+            // 
+            this.btnCadUnidEscolar.Location = new System.Drawing.Point(663, 516);
+            this.btnCadUnidEscolar.Name = "btnCadUnidEscolar";
+            this.btnCadUnidEscolar.Size = new System.Drawing.Size(125, 51);
+            this.btnCadUnidEscolar.TabIndex = 9;
+            this.btnCadUnidEscolar.Text = "Cadastro de Unidades Escolares";
+            this.btnCadUnidEscolar.UseVisualStyleBackColor = true;
+            this.btnCadUnidEscolar.Click += new System.EventHandler(this.button2_Click);
+            // 
             // frmBuscarAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 524);
+            this.ClientSize = new System.Drawing.Size(800, 599);
+            this.Controls.Add(this.btnCadUnidEscolar);
             this.Controls.Add(this.btnMatricularAluno);
             this.Controls.Add(this.btnAtualizarAluno);
             this.Controls.Add(this.btnBuscarAluno);
@@ -161,6 +173,7 @@
         private System.Windows.Forms.Button btnBuscarAluno;
         private System.Windows.Forms.Button btnAtualizarAluno;
         private System.Windows.Forms.Button btnMatricularAluno;
+        private System.Windows.Forms.Button btnCadUnidEscolar;
     }
 }
 
