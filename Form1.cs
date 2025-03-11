@@ -109,5 +109,23 @@ namespace consultaAluno
             frmCadUnidEscolar frm = new frmCadUnidEscolar();
                 frm.ShowDialog();
         }
+
+        private void btnBuscaMatricula_Click(object sender, EventArgs e)
+        {
+            frmBuscarMatricula frm = new frmBuscarMatricula();
+            frm.ShowDialog();   // ShowDialog - Chama a janela de Cadastro de curso  
+        }
+
+        private void btnBuscarUnidade_Click(object sender, EventArgs e)
+        {
+            frmBuscarUnidade frm = new frmBuscarUnidade();
+            frm.ShowDialog(); 
+        }
+
+        private void btnBuscarCurso_Click(object sender, EventArgs e)
+        {
+            frmBuscarCurso frm = new frmBuscarCurso();
+            frm.ShowDialog();
+        }
     }
 }

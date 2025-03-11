@@ -53,6 +53,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscar.Designer.cs">
+      <DependentUpon>frmBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCurso.Designer.cs">
+      <DependentUpon>frmBuscarCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarUnidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarUnidade.Designer.cs">
+      <DependentUpon>frmBuscarUnidade.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastroAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +99,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscar.resx">
+      <DependentUpon>frmBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarCurso.resx">
+      <DependentUpon>frmBuscarCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarUnidade.resx">
+      <DependentUpon>frmBuscarUnidade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroAluno.resx">
       <DependentUpon>frmCadastroAluno.cs</DependentUpon>

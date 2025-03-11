@@ -126,7 +126,6 @@
             this.cmbUnidadeEscolar.Name = "cmbUnidadeEscolar";
             this.cmbUnidadeEscolar.Size = new System.Drawing.Size(203, 21);
             this.cmbUnidadeEscolar.TabIndex = 9;
-//            this.cmbUnidadeEscolar.SelectedIndexChanged += new System.EventHandler(this.cmbUnidadeEscolar_SelectedIndexChanged);
             // 
             // cmbStatusMatricula
             // 
@@ -156,6 +155,7 @@
             this.btnSalvar.TabIndex = 12;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
             // 
             // frmMatricula
             // 

@@ -166,8 +166,9 @@ namespace consultaAluno
 
 
 
-        private void btnSalvar_Click(object sender, EventArgs e)
+        
 
+        private void btnSalvar_Click_1(object sender, EventArgs e)
         {
 
             if (cmbNomeAluno.SelectedItem == null || cmbNomeCurso.SelectedItem == null)
@@ -184,6 +185,8 @@ namespace consultaAluno
 
             int idCurso = (int)(cmbNomeCurso.SelectedItem as ComboboxItem).Value;
 
+            int idUnidadeEscolar = (int)(cmbUnidadeEscolar.SelectedItem as ComboboxItem).Value;
+
             DateTime dataMatricula = dtpDataMatricula.Value;
 
             string statusMatricula = cmbStatusMatricula.SelectedItem.ToString();
@@ -194,13 +197,15 @@ namespace consultaAluno
 
                 cn.Open();
 
-                SqlCommand cmd = new SqlCommand("Insert into matriculas (idAluno, idCurso, dataMatricula, statusMatricula) VALUES (@idAluno, @idCurso, @dataMatricula, @statusMatricula)", cn);
+                SqlCommand cmd = new SqlCommand("Insert into matriculas (idAluno, idCurso, dataMatricula, idUnidadeEscolar, statusMatricula) VALUES (@idAluno, @idCurso, @dataMatricula, @UnidadeEscolar, @statusMatricula)", cn);
 
                 cmd.Parameters.AddWithValue("@idAluno", idAluno);
 
                 cmd.Parameters.AddWithValue("@idCurso", idCurso);
 
                 cmd.Parameters.AddWithValue("@dataMatricula", dataMatricula);
+
+                cmd.Parameters.AddWithValue("@UnidadeEscolar", idUnidadeEscolar);
 
                 cmd.Parameters.AddWithValue("@statusMatricula", statusMatricula);
 
@@ -210,6 +215,7 @@ namespace consultaAluno
             }
         }
     }
+    
 }
 
 
