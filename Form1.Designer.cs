@@ -41,6 +41,7 @@
             this.btnBuscaMatricula = new System.Windows.Forms.Button();
             this.btnBuscarUnidade = new System.Windows.Forms.Button();
             this.btnBuscarCurso = new System.Windows.Forms.Button();
+            this.btnRelAlunos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -171,11 +172,21 @@
             this.btnBuscarCurso.UseVisualStyleBackColor = true;
             this.btnBuscarCurso.Click += new System.EventHandler(this.btnBuscarCurso_Click);
             // 
+            // btnRelAlunos
+            // 
+            this.btnRelAlunos.Location = new System.Drawing.Point(25, 542);
+            this.btnRelAlunos.Name = "btnRelAlunos";
+            this.btnRelAlunos.Size = new System.Drawing.Size(118, 45);
+            this.btnRelAlunos.TabIndex = 13;
+            this.btnRelAlunos.Text = "Relatorio Alunos";
+            this.btnRelAlunos.UseVisualStyleBackColor = true;
+            // 
             // frmBuscarAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 599);
+            this.Controls.Add(this.btnRelAlunos);
             this.Controls.Add(this.btnBuscarCurso);
             this.Controls.Add(this.btnBuscarUnidade);
             this.Controls.Add(this.btnBuscaMatricula);
@@ -213,6 +224,7 @@
         private System.Windows.Forms.Button btnBuscaMatricula;
         private System.Windows.Forms.Button btnBuscarUnidade;
         private System.Windows.Forms.Button btnBuscarCurso;
+        private System.Windows.Forms.Button btnRelAlunos;
     }
 }
 
