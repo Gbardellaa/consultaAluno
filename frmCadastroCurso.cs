@@ -13,7 +13,7 @@ namespace consultaAluno
 {
     public partial class frmCadastroCurso : Form
     {
-        public frmCadastroCurso()
+        public frmCadastroCurso(int idCurso)
         {
             InitializeComponent();
         }
@@ -56,6 +56,11 @@ namespace consultaAluno
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

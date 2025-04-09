@@ -1,4 +1,5 @@
-﻿using System;
+﻿using consultaAluno.Relatorios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -56,8 +57,8 @@ namespace consultaAluno
 
         private void btnAddCurso_Click(object sender, EventArgs e)
         {
-            frmCadastroCurso frm = new frmCadastroCurso();
-            frm.ShowDialog();   // ShowDialog - Chama a janela de Cadastro de curso  
+    //        frmCadastroCurso frm = new frmCadastroCurso();
+    //        frm.ShowDialog();   // ShowDialog - Chama a janela de Cadastro de curso  
         }
 
         private void btnBuscarAluno_Click(object sender, EventArgs e)
@@ -125,6 +126,12 @@ namespace consultaAluno
         private void btnBuscarCurso_Click(object sender, EventArgs e)
         {
             frmBuscarCurso frm = new frmBuscarCurso();
+            frm.ShowDialog();
+        }
+
+        private void btnRelAlunos_Click(object sender, EventArgs e)
+        {
+            frmRelAlunos frm = new frmRelAlunos();
             frm.ShowDialog();
         }
     }

@@ -41,13 +41,14 @@
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.txtAnoAluno = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBuscarAluno = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalvar
             // 
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(326, 365);
+            this.btnSalvar.Location = new System.Drawing.Point(284, 365);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(83, 28);
             this.btnSalvar.TabIndex = 0;
@@ -168,11 +169,22 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // btnBuscarAluno
+            // 
+            this.btnBuscarAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarAluno.Location = new System.Drawing.Point(423, 365);
+            this.btnBuscarAluno.Name = "btnBuscarAluno";
+            this.btnBuscarAluno.Size = new System.Drawing.Size(83, 28);
+            this.btnBuscarAluno.TabIndex = 13;
+            this.btnBuscarAluno.Text = "Buscar";
+            this.btnBuscarAluno.UseVisualStyleBackColor = true;
+            // 
             // frmCadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBuscarAluno);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtAnoAluno);
             this.Controls.Add(this.txtTelefone);
@@ -209,5 +221,6 @@
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.TextBox txtAnoAluno;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnBuscarAluno;
     }
 }

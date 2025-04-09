@@ -45,13 +45,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.t5 = new System.Windows.Forms.Label();
             this.txtStatusCurso = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnsalvar
             // 
             this.btnsalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalvar.Location = new System.Drawing.Point(567, 374);
+            this.btnsalvar.Location = new System.Drawing.Point(655, 318);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(115, 47);
             this.btnsalvar.TabIndex = 0;
@@ -222,6 +223,17 @@
             this.txtStatusCurso.Size = new System.Drawing.Size(126, 20);
             this.txtStatusCurso.TabIndex = 16;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(655, 391);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(115, 47);
+            this.btnBuscar.TabIndex = 17;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmCadastroCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +241,7 @@
             this.BackgroundImage = global::consultaAluno.Properties.Resources.inovacao_e_tecnologia;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtStatusCurso);
             this.Controls.Add(this.t5);
             this.Controls.Add(this.pictureBox1);
@@ -273,5 +286,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label t5;
         private System.Windows.Forms.TextBox txtStatusCurso;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

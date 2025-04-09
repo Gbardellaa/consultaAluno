@@ -174,12 +174,13 @@
             // 
             // btnRelAlunos
             // 
-            this.btnRelAlunos.Location = new System.Drawing.Point(25, 542);
+            this.btnRelAlunos.Location = new System.Drawing.Point(12, 522);
             this.btnRelAlunos.Name = "btnRelAlunos";
             this.btnRelAlunos.Size = new System.Drawing.Size(118, 45);
             this.btnRelAlunos.TabIndex = 13;
             this.btnRelAlunos.Text = "Relatorio Alunos";
             this.btnRelAlunos.UseVisualStyleBackColor = true;
+            this.btnRelAlunos.Click += new System.EventHandler(this.btnRelAlunos_Click);
             // 
             // frmBuscarAluno
             // 
